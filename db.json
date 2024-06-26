@@ -1,0 +1,269 @@
+{
+    "basic_syntax": [
+      {
+        "name": "Blockquotes",
+        "description": "To create a blockquote, add a `\u003E` in front of a paragraph.",
+        "examples": [
+          {
+            "markdown": "\u003E Dorothy followed her through many of the beautiful rooms in  her castle.",
+            "html": "\u003Cblockquote\u003E\u003Cp\u003EDorothy followed her through many of the beautiful rooms in her castle.\u003C/p\u003E\u003C/blockquote\u003E"
+          }
+        ],
+        "additional_examples": [
+          {
+            "name": "Blockquotes with Multiple Paragraphs",
+            "description": "Blockquotes can contain multiple paragraphs. Add a `\u003E` on the blank lines between the paragraphs.",
+            "markdown": "\u003E Dorothy followed her through many of the beautiful rooms in her castle.\n\u003E\n\u003E The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.\n",
+            "html": "\u003Cblockquote\u003E\u003Cp\u003EDorothy followed her through many of the beautiful rooms in her castle.\u003C/p\u003E\u003Cp\u003EThe Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.\u003C/p\u003E\u003C/blockquote\u003E"
+          },
+          {
+            "name": "Nested Blockquotes",
+            "description": "Blockquotes can be nested. Add a `\u003E\u003E` in front of the paragraph you want to nest.",
+            "markdown": "\u003E Dorothy followed her through many of the beautiful rooms in her castle.\n\u003E\n\u003E\u003E The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.\n",
+            "html": "\u003Cblockquote\u003E\u003Cp\u003EDorothy followed her through many of the beautiful rooms in her castle.\u003C/p\u003E\u003Cblockquote\u003E\u003Cp\u003EThe Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.\u003C/p\u003E\u003C/blockquote\u003E\u003C/blockquote\u003E"
+          },
+          {
+            "name": "Blockquotes with Other Elements",
+            "description": "Blockquotes can contain other Markdown formatted elements. Not all elements can be used — you'll need to experiment to see which ones work.",
+            "markdown": "\u003E ### The quarterly results look great!\n\u003E\n\u003E - Revenue was off the chart.\n\u003E - Profits were higher than ever.\n\u003E\n\u003E  *Everything* is going according to **plan**.\n",
+            "html": "\u003Cblockquote\u003E\u003Ch3\u003EThe quarterly results look great!\u003C/h3\u003E\u003Cul\u003E\u003Cli\u003ERevenue was off the chart.\u003C/li\u003E\u003Cli\u003EProfits were higher than ever.\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cem\u003EEverything\u003C/em\u003E is going according to \u003Cstrong\u003Eplan\u003C/strong\u003E.\u003C/p\u003E\u003C/blockquote\u003E"
+          }
+        ]
+      },
+      {
+        "name": "Bold",
+        "description": "To bold text, add two asterisks or underscores before and after a word or phrase. To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.",
+        "examples": [
+          {
+            "markdown": "I just love **bold text**.",
+            "html": "I just love \u003Cstrong\u003Ebold text\u003C/strong\u003E."
+          },
+          {
+            "markdown": "I just love __bold text__.",
+            "html": "I just love \u003Cstrong\u003Ebold text\u003C/strong\u003E."
+          },
+          {
+            "markdown": "Love**is**bold",
+            "html": "Love\u003Cstrong\u003Eis\u003C/strong\u003Ebold"
+          }
+        ],
+        "additional_examples": []
+      },
+      {
+        "name": "Code",
+        "description": "To denote a word or phrase as code, enclose it in backticks (`` ` ``).",
+        "examples": [
+          {
+            "markdown": "At the command prompt, type `nano`.",
+            "html": "At the command prompt, type \u003Ccode\u003Enano\u003C/code\u003E."
+          }
+        ],
+        "additional_examples": [
+          {
+            "name": "Escaping Backticks",
+            "description": "If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks (\u003Ccode\u003E``\u003C/code\u003E).",
+            "markdown": "``Use `code` in your Markdown file.``",
+            "html": "\u003Ccode\u003EUse `code` in your Markdown file.\u003C/code\u003E"
+          },
+          {
+            "name": "Code Blocks",
+            "description": "To create code blocks, indent every line of the block by at least four spaces or one tab.",
+            "markdown": "\u003Chtml\u003E\n  \u003Chead\u003E\n  \u003C/head\u003E\n\u003C/html\u003E\n",
+            "html": "\u003Cpre\u003E\u003Ccode\u003E\u003Chtml\u003E\u003Chead\u003E\u003C/head\u003E\u003C/html\u003E\u003C/code\u003E\u003C/pre\u003E"
+          }
+        ]
+      },
+      {
+        "name": "Headings",
+        "description": "To create a heading, add number signs (`#`) in front of a word or phrase. The number of number signs you use should correspond to the heading level. For example, to create a heading level three (`\u003Ch3\u003E`), use three number signs (e.g., `### My Header`).",
+        "examples": [
+          {
+            "markdown": "# Heading level 1",
+            "html": "\u003Ch1\u003EHeading level 1\u003C/h1\u003E"
+          },
+          {
+            "markdown": "## Heading level 2",
+            "html": "\u003Ch2\u003EHeading level 2\u003C/h2\u003E"
+          },
+          {
+            "markdown": "### Heading level 3",
+            "html": "\u003Ch3\u003EHeading level 3\u003C/h3\u003E"
+          },
+          {
+            "markdown": "#### Heading level 4",
+            "html": "\u003Ch4\u003EHeading level 4\u003C/h4\u003E"
+          },
+          {
+            "markdown": "##### Heading level 5",
+            "html": "\u003Ch5\u003EHeading level 5\u003C/h5\u003E"
+          },
+          {
+            "markdown": "###### Heading level 6",
+            "html": "\u003Ch6\u003EHeading level 6\u003C/h6\u003E"
+          }
+        ],
+        "additional_examples": [
+          {
+            "name": "Alternative H1 Syntax",
+            "description": "Alternatively, on the line below the text, add any number of == characters for heading level 1.",
+            "markdown": "Heading level 1\n===============\n",
+            "html": "\u003Ch1\u003EHeading level 1\u003C/h1\u003E"
+          },
+          {
+            "name": "Alternative H2 Syntax",
+            "description": "Alternatively, on the line below the text, add any number of -- characters for heading level 2.",
+            "markdown": "Heading level 2\n---------------\n",
+            "html": "\u003Ch2\u003EHeading level 2\u003C/h2\u003E"
+          }
+        ]
+      },
+      {
+        "name": "Horizontal Rules",
+        "description": "To create a horizontal rule, use three or more asterisks (`***`), dashes (`---`), or underscores (`___`) on a line by themselves.",
+        "examples": [
+          {
+            "markdown": "***",
+            "html": "\u003Chr\u003E"
+          },
+          {
+            "markdown": "---",
+            "html": "\u003Chr\u003E"
+          },
+          {
+            "markdown": "_________________",
+            "html": "\u003Chr\u003E"
+          }
+        ],
+        "additional_examples": []
+      },
+      {
+        "name": "Images",
+        "description": "To add an image, add an exclamation mark (`!`), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.",
+        "examples": [
+          {
+            "markdown": "![The San Juan Mountains are beautiful!](/assets/images/san-juan-mountains.jpg \"San Juan Mountains\")\n",
+            "html": "\u003Cimg src=\"/assets/images/san-juan-mountains.jpg\" class=\"img-responsive\" alt=\"The San Juan Mountains are beautiful!\" title=\"San Juan Mountains\"\u003E"
+          }
+        ],
+        "additional_examples": [
+          {
+            "name": "Linking Images",
+            "description": "To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.",
+            "markdown": "[![An old rock in the desert](/assets/images/shiprock.jpg \"Shiprock, New Mexico by Beau Rogers\")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)\n",
+            "html": "\u003Ca href=\"https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv\"\u003E\u003Cimg src=\"/assets/images/shiprock.jpg\" alt=\"An old rock in the desert\" title=\"Shiprock, New Mexico by Beau Rogers\"\u003E\u003C/a\u003E"
+          }
+        ]
+      },
+      {
+        "name": "Italic",
+        "description": "To italicize text, add one asterisk or underscore before and after a word or phrase. To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters.",
+        "examples": [
+          {
+            "markdown": "Italicized text is the *cat's meow*.",
+            "html": "Italicized text is the \u003Cem\u003Ecat's meow\u003C/em\u003E."
+          },
+          {
+            "markdown": "Italicized text is the _cat's meow_.",
+            "html": "Italicized text is the \u003Cem\u003Ecat's meow\u003C/em\u003E."
+          },
+          {
+            "markdown": "A*cat*meow",
+            "html": "A\u003Cem\u003Ecat\u003C/em\u003Emeow"
+          }
+        ],
+        "additional_examples": []
+      },
+      {
+        "name": "Line Breaks",
+        "description": "To create a line break or new line (`\u003Cbr\u003E`), end a line with two or more spaces, and then type return.",
+        "examples": [
+          {
+            "markdown": "This is the first line.  \nAnd this is the second line.\n",
+            "html": "\u003Cp\u003EThis is the first line.  \u003Cbr\u003EAnd this is the second line.\u003C/p\u003E"
+          }
+        ],
+        "additional_examples": []
+      },
+      {
+        "name": "Links",
+        "description": "To create a link, enclose the link text in brackets (e.g., `[Duck Duck Go]`) and then follow it immediately with the URL in parentheses (e.g., `(https://duckduckgo.com)`). You can optionally add a title after the URL in the parentheses.",
+        "examples": [
+          {
+            "markdown": "My favorite search engine is [Duck Duck Go](https://duckduckgo.com \"The best search engine for privacy\").",
+            "html": "My favorite search engine is \u003Ca href=\"https://duckduckgo.com\" title=\"The best search engine for privacy\"\u003EDuck Duck Go\u003C/a\u003E."
+          }
+        ],
+        "additional_examples": [
+          {
+            "name": "URLs and Email Addresses",
+            "description": "To quickly turn a URL or email address into a link, enclose it in angle brackets.",
+            "markdown": "\u003Chttps://www.markdownguide.org\u003E\u003Cfake@example.com\u003E",
+            "html": "\u003Ca href=\"https://www.markdownguide.org\"\u003Ehttps://www.markdownguide.org\u003C/a\u003E\u003Ca href=\"&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#x66;&#x61;&#x6b;&#101;&#64;&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#109;\"\u003E&#x66;&#x61;&#x6b;&#101;&#64;&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#109;\u003C/a\u003E"
+          },
+          {
+            "name": "Formatting Links",
+            "description": "To emphasize links, add asterisks before and after the brackets and parentheses.",
+            "markdown": "I love supporting **[EFF](https://eff.org)**. This is the *[Markdown Guide](https://www.markdownguide.org)*.",
+            "html": "I love supporting \u003Cstrong\u003E\u003Ca href=\"https://eff.org\"\u003EEFF\u003C/a\u003E\u003C/strong\u003E. This is the \u003Cem\u003E\u003Ca href=\"https://www.markdownguide.org\"\u003EMarkdown Guide\u003C/a\u003E\u003C/em\u003E."
+          }
+        ]
+      },
+      {
+        "name": "Ordered Lists",
+        "description": "To create an ordered list, add line items with numbers followed by periods. The numbers don't have to be in numerical order, but the list should start with the number one.",
+        "examples": [
+          {
+            "markdown": "1. First item\n2. Second item\n3. Third item\n4. Fourth item\n",
+            "html": "\u003Col\u003E\u003Cli\u003EFirst item\u003C/li\u003E\u003Cli\u003ESecond item\u003C/li\u003E\u003Cli\u003EThird item\u003C/li\u003E\u003Cli\u003EFourth item\u003C/li\u003E\u003C/ol\u003E"
+          },
+          {
+            "markdown": "1. First item\n1. Second item\n1. Third item\n1. Fourth item\n",
+            "html": "\u003Col\u003E\u003Cli\u003EFirst item\u003C/li\u003E\u003Cli\u003ESecond item\u003C/li\u003E\u003Cli\u003EThird item\u003C/li\u003E\u003Cli\u003EFourth item\u003C/li\u003E\u003C/ol\u003E"
+          },
+          {
+            "markdown": "1. First item\n8. Second item\n3. Third item\n5. Fourth item\n",
+            "html": "\u003Col\u003E\u003Cli\u003EFirst item\u003C/li\u003E\u003Cli\u003ESecond item\u003C/li\u003E\u003Cli\u003EThird item\u003C/li\u003E\u003Cli\u003EFourth item\u003C/li\u003E\u003C/ol\u003E"
+          },
+          {
+            "markdown": "1. First item\n2. Second item\n3. Third item\n  1. Indented item\n  2. Indented item\n4. Fourth item\n",
+            "html": "\u003Col\u003E\u003Cli\u003EFirst item\u003C/li\u003E\u003Cli\u003ESecond item\u003C/li\u003E\u003Cli\u003EThird item\u003Col\u003E\u003Cli\u003EIndented item\u003C/li\u003E\u003Cli\u003EIndented item\u003C/li\u003E\u003C/ol\u003E\u003C/li\u003E\u003Cli\u003EFourth item\u003C/li\u003E\u003C/ol\u003E"
+          }
+        ],
+        "additional_examples": []
+      },
+      {
+        "name": "Paragraphs",
+        "description": "To create paragraphs, use a blank line to separate one or more lines of text. You should not indent paragraphs with spaces or tabs.",
+        "examples": [
+          {
+            "markdown": "I really like using Markdown.\n\nI think I'll use it to format all of my documents from now on.\n",
+            "html": "\u003Cp\u003EI really like using Markdown.\u003C/p\u003E\u003Cp\u003EI think I'll use it to format all of my documents from now on.\u003C/p\u003E"
+          }
+        ],
+        "additional_examples": []
+      },
+      {
+        "name": "Unordered Lists",
+        "description": "To create an unordered list, add dashes (`-`), asterisks (`*`), or plus signs (`+`) in front of line items. Indent one or more items to create a nested list.",
+        "examples": [
+          {
+            "markdown": "- First item\n- Second item\n- Third item\n- Fourth item\n",
+            "html": "\u003Cul\u003E\u003Cli\u003EFirst item\u003C/li\u003E\u003Cli\u003ESecond item\u003C/li\u003E\u003Cli\u003EThird item\u003C/li\u003E\u003Cli\u003EFourth item\u003C/li\u003E\u003C/ul\u003E"
+          },
+          {
+            "markdown": "* First item\n* Second item\n* Third item\n* Fourth item\n",
+            "html": "\u003Cul\u003E\u003Cli\u003EFirst item\u003C/li\u003E\u003Cli\u003ESecond item\u003C/li\u003E\u003Cli\u003EThird item\u003C/li\u003E\u003Cli\u003EFourth item\u003C/li\u003E\u003C/ul\u003E"
+          },
+          {
+            "markdown": "+ First item\n* Second item\n- Third item\n+ Fourth item\n",
+            "html": "\u003Cul\u003E\u003Cli\u003EFirst item\u003C/li\u003E\u003Cli\u003ESecond item\u003C/li\u003E\u003Cli\u003EThird item\u003C/li\u003E\u003Cli\u003EFourth item\u003C/li\u003E\u003C/ul\u003E"
+          },
+          {
+            "markdown": "- First item\n- Second item\n- Third item\n    - Indented item\n    - Indented item\n- Fourth item\n",
+            "html": "\u003Cul\u003E\u003Cli\u003EFirst item\u003C/li\u003E\u003Cli\u003ESecond item\u003C/li\u003E\u003Cli\u003EThird item\u003Cul\u003E\u003Cli\u003EIndented item\u003C/li\u003E\u003Cli\u003EIndented item\u003C/li\u003E\u003C/ul\u003E\u003C/li\u003E\u003Cli\u003EFourth item\u003C/li\u003E\u003C/ul\u003E"
+          }
+        ],
+        "additional_examples": []
+      }
+    ]
+  }
